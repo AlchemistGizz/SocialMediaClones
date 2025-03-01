@@ -67,18 +67,24 @@ input.empty {
   margin: 0;
   padding: 0;
 }
-/*#fullscreen {
-  width: 100vw;
-  height: 100vh;
-  background-color: lightgray;
-}
-
 @media (max-width: 576px) {
-  #fullscreen {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: lightblue;
+  .body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
-}*/
+
+  #middle{ /* Ana içeriği saran div */
+    min-height: 100vh; /* Sayfanın tamamını kaplaması için */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sticky-sidebar {
+    flex-grow: 1; /* İçeriğin geri kalanını kaplamasını sağlar */
+    width: 100%;
+    background-color: white;
+    overflow-y: auto;
+  }
+}
 
